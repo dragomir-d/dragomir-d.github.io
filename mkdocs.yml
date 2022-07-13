@@ -1,0 +1,35 @@
+site_name: Unnamed
+site_description: Any
+site_author: Dragomir
+
+nav:
+
+theme:
+  name: material  #инсталира се допълнително след mkdocs
+  language: bg
+  features:
+  palette:
+    - primary: indigo
+    - accent: indigo
+    - scheme: default #използвай 'slate' за dark mode
+  icon:
+    logo: material/home
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.details
+
+plugins:
+  - search:
+      lang:
+        - en #за да работи търсенето на en strings при language: bg
+        - ru #за да работи търсенето на cyr string когато има lang: en
+
+extra:
+  homepage: http://kb.datamax.bg
